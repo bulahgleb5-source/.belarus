@@ -66,24 +66,19 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
     background-image: linear-gradient(rgba(14, 12, 10, 0.85), rgba(14, 12, 10, 0.85)), url('bg-hd.jpg'); 
     background-size: cover; 
     background-position: center; 
-    min-height: 75vh; /* Сделали чуть выше, чтобы поместился текст */
+    height: 60vh; 
     color: #ffffff; 
     display: flex; 
-    align-items: flex-start; /* Подняли контент вверх */
-    padding: 120px 60px 60px 60px; /* Добавили отступ сверху */
+    align-items: center; 
+    padding: 60px; 
 }
 
-.hero-container { 
-    max-width: 1100px; 
-    margin: 0; 
-    text-align: left; 
-}
+.hero-container { max-width: 1100px; margin: 0; text-align: left; }
 
-/* Увеличенный главный заголовок */
 .hero h1 { 
-    font-size: clamp(40px, 5vw, 56px); /* Увеличили размер шрифта */
+    font-size: clamp(40px, 5vw, 56px); 
     font-weight: 800; 
-    margin-bottom: 25px; 
+    margin-bottom: 0; 
     line-height: 1.1; 
     letter-spacing: -0.5px; 
     text-transform: uppercase; 
@@ -91,14 +86,6 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
     text-shadow: 0px 4px 15px rgba(255, 255, 255, 0.15);
 }
 
-/* Стили для нового добавленного текста */
-.hero-about-text {
-    font-size: 18px;
-    color: #e3dbd0; /* Светло-серый, чтобы не сливался с белым заголовком */
-    line-height: 1.7;
-    max-width: 900px;
-    margin-bottom: 30px;
-}
 .hero-service-minimal { background-color: #1c1713; padding: 100px 60px 50px 60px; border-bottom: 1px solid #332a23; }
 .container-service { max-width: 1100px; margin: 0 auto; }
 .service-title-main { font-size: 42px; font-weight: 900; text-transform: uppercase; color: #ffffff; }
@@ -111,24 +98,17 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
 .stats-grid-main { max-width: 1240px; margin: 0 auto; display: flex; justify-content: space-between; gap: 40px; }
 .stat-main-box { flex: 1; display: flex; flex-direction: column; border-left: 1px solid #332a23; padding-left: 30px; justify-content: center; }
 
-/* Текст над статистикой белый */
-.stat-title-top { 
-    font-size: 15px; 
-    color: #ffffff; 
-    font-weight: 700; 
-    margin-bottom: 10px; 
-    line-height: 1.4; 
-}
+.stat-title-top { font-size: 15px; color: #ffffff; font-weight: 700; margin-bottom: 0; line-height: 1.4; }
 
 /* ==========================================================================
-   6. ОБЪЕДИНЕННЫЙ БЛОК: ВОПРОСЫ И КОНТАКТЫ
+   6. ОБЪЕДИНЕННЫЙ БЛОК: ВОПРОСЫ И КОНТАКТЫ (Выровнен)
    ========================================================================== */
-.business-combined-section { background-color: #0e0c0a; padding: 90px 60px; width: 100%; border-bottom: 1px solid #332a23; }
+.business-combined-section { background-color: #0e0c0a; padding: 50px 60px 90px 60px; width: 100%; border-bottom: 1px solid #332a23; }
 .combined-wrapper { max-width: 1240px; margin: 0 auto; display: flex; gap: 80px; align-items: flex-start; }
 
-.combined-faq-left { flex: 1 1 50%; }
-.combined-faq-left h2 { font-size: 30px; text-transform: uppercase; color: #ffffff; margin-bottom: 15px; font-weight: 800; letter-spacing: 0.5px; }
-.combined-faq-sub { font-size: 14px; color: #a69e93; margin-bottom: 40px; }
+.combined-faq-left { flex: 1 1 50%; margin-top: 0; }
+.combined-faq-left h2 { font-size: 30px; text-transform: uppercase; color: #ffffff; margin-bottom: 15px; font-weight: 800; letter-spacing: 0.5px; line-height: 1.2; }
+.combined-faq-sub { font-size: 14px; color: #a69e93; margin-bottom: 30px; }
 .faq-compact-list { display: flex; flex-direction: column; }
 .faq-compact-item { border-bottom: 1px solid #332a23; padding: 25px 0; cursor: pointer; }
 .faq-compact-item:first-child { border-top: 1px solid #332a23; }
@@ -139,7 +119,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
 .faq-compact-answer { max-height: 0; overflow: hidden; font-size: 14px; color: #c4baae; line-height: 1.6; margin-top: 0; transition: max-height 0.3s cubic-bezier(0, 1, 0, 1), margin-top 0.3s ease; }
 .faq-compact-item.active .faq-compact-answer { max-height: 200px; margin-top: 15px; transition: max-height 0.3s cubic-bezier(1, 0, 1, 0), margin-top 0.3s ease; }
 
-.combined-contacts-right { flex: 1 1 50%; background: #1c1713; color: #ffffff; padding: 45px; border: 1px solid #332a23; display: flex; flex-direction: column; gap: 40px; }
+.combined-contacts-right { flex: 1 1 50%; background: #1c1713; color: #ffffff; padding: 35px; border: 1px solid #332a23; display: flex; flex-direction: column; gap: 30px; }
 .business-text-block h3 { margin-bottom: 20px; text-transform: uppercase; font-size: 13px; letter-spacing: 1.5px; border-bottom: 1px solid #332a23; padding-bottom: 14px; color: #ffffff; }
 .business-text-block p { margin-bottom: 12px; font-size: 14px; color: #c4baae; }
 .business-text-block strong { color: #ffffff; font-weight: 600; }
