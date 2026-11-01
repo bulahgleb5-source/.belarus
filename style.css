@@ -325,3 +325,13 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
 @media (max-width: 1200px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 992px) { .about-grid { grid-template-columns: 1fr; } }
 @media (max-width: 576px) { .projects-grid { grid-template-columns: 1fr; } .about-lead { font-size: 16px; } .about-block { margin-bottom: 50px; } }
+
+/* Главная: полоса с преимуществами шире, подписи в одну строку */
+.stats-section .container-lg { max-width: none; }
+.stats-section .stats-grid-main { max-width: 1760px; gap: 48px; }
+.stats-section .stat-main-box { padding-left: 36px; }
+.stats-section .stat-title-top { font-size: 17px; }
+@media (max-width: 1200px) {
+    .stats-section .stats-grid-main { gap: 30px; }
+    .stats-section .stat-title-top { font-size: 16px; }
+}
