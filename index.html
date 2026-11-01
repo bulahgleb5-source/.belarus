@@ -3,66 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ООО «Альтербелтех» | General подряд и инженерные сети полного цикла</title>
+    <meta name="theme-color" content="#0e0c0a">
+    <title>ООО «АльтерБелТех» | Генеральный подряд и инженерные сети полного цикла</title>
     <meta name="description" content="Реализация строительных проектов полного цикла, общестроительные работы и монтаж технологического оборудования в Минске и по всей Беларуси.">
     <link rel="icon" type="image/jpeg" href="1001.jpg">
     <link rel="stylesheet" href="style.css">
+    <noscript><style>.preloader{display:none !important}</style></noscript>
 </head>
 <body>
 
     <div class="preloader" id="preloader">
         <div class="preloader-content">
-            <svg class="preloader-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <svg class="preloader-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <polygon points="50,15 90,85 10,85" fill="none" stroke="#ffffff" stroke-width="8" stroke-linejoin="miter"/>
                 <line x1="22" y1="68" x2="78" y2="68" stroke="#ffffff" stroke-width="6"/>
             </svg>
             <div class="preloader-title">АЛЬТЕРБЕЛТЕХ</div>
-            <div class="loading-dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="loading-dots"><span></span><span></span><span></span></div>
         </div>
     </div>
 
+    <a class="skip-link" href="#content">Перейти к содержимому</a>
+
     <header class="header">
-        <a href="index.html" class="header-left header-logo-link">
-            <img src="1001.jpg" alt="ООО Альтербелтех" class="header-logo-img">
+        <a href="index.html" class="header-left header-logo-link" aria-current="page">
+            <img src="1001.jpg" alt="ООО «АльтерБелТех»" class="header-logo-img">
             <div class="header-logo-text-block">
-                <div class="logo logo-heavy">Альтербелтех</div>
+                <div class="logo logo-heavy">АльтерБелТех</div>
                 <span class="logo-subtext">Строительная компания</span>
             </div>
         </a>
-        
-        <div class="header-center-nav">
+
+        <nav class="header-center-nav" id="site-nav" aria-label="Основное меню">
             <a href="contacts.html" class="btn-nav-item">О компании</a>
             <div class="dropdown-menu-container">
-                <button class="btn-services-toggle">Услуги ▾</button>
-                <div class="dropdown-content">
+                <button type="button" class="btn-services-toggle" aria-expanded="false" aria-haspopup="true" aria-controls="services-menu">Услуги ▾</button>
+                <div class="dropdown-content" id="services-menu">
                     <a href="genpodryad.html">Генеральный подряд</a>
-                    <a href="zemlyanye-raboty.html">Общестроительные работы</a>
-                    <a href="demontazh.html">Сети электроснабжения (внутр./наруж.)</a>
-                    <a href="dostavka.html">Вентиляция, ВК и НВК</a>
-                    <a href="blagoustrojstvo.html">Монтаж тех. оборудования</a>
+                    <a href="obshchestroitelnye-raboty.html">Общестроительные работы</a>
+                    <a href="elektrosnabzhenie.html">Сети электроснабжения (внутр./наруж.)</a>
+                    <a href="ventilyaciya-vk.html">Вентиляция, ВК и НВК</a>
+                    <a href="montazh-oborudovaniya.html">Монтаж тех. оборудования</a>
                 </div>
             </div>
             <a href="autopark.html" class="btn-nav-item">Техника</a>
-            <a href="javascript:void(0);" class="btn-nav-item disabled">Тендеры</a>
-            <a href="javascript:void(0);" class="btn-nav-item disabled">Новости</a>
-        </div>
+            <span class="btn-nav-item disabled" aria-disabled="true" title="Раздел скоро появится">Тендеры</span>
+            <span class="btn-nav-item disabled" aria-disabled="true" title="Раздел скоро появится">Новости</span>
+        </nav>
 
         <div class="header-right">
             <div class="header-schedule">
                 <strong><a href="tel:+375445288999">+375 (44) 528-89-99</a></strong>
                 <span>Ежедневно с 08:00 до 21:00</span>
             </div>
-            <a href="#combined-zone" class="btn btn-primary">Связаться</a>
+            <a href="index.html#combined-zone" class="btn btn-primary">Связаться</a>
+            <button type="button" class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
+
+    <main id="content">
 
     <section class="hero">
         <div class="hero-container">
             <h1>Строительство и реконструкция зданий и сооружений под ключ</h1>
+            <p class="hero-subtitle">Генеральный подряд, полный спектр общестроительных услуг, монтаж наружных и внутренних инженерных систем, комплекс пусконаладочных работ</p>
         </div>
     </section>
 
@@ -102,7 +108,7 @@
                     </div>
                     <div class="faq-compact-item">
                         <div class="faq-compact-question">Есть ли у компании аттестаты соответствия на данные работы?</div>
-                        <div class="faq-compact-answer">Да, ООО «Альтербелтех» осуществляет деятельность на основании официальных аттестатов соответствия Республики Беларусь на функции генерального подрядчика, выполнение общестроительных работ и устройство инженерных сетей.</div>
+                        <div class="faq-compact-answer">Да, ООО «АльтерБелТех» осуществляет деятельность на основании официальных аттестатов соответствия Республики Беларусь на функции генерального подрядчика, выполнение общестроительных работ и устройство инженерных сетей.</div>
                     </div>
                 </div>
             </div>
@@ -117,39 +123,46 @@
                 
                 <div class="business-form-block">
                     <h4>Отправить проект на расчет стоимости</h4>
-                    <form action="#" method="POST" onsubmit="alert('Проект отправлен на расчет!'); return false;">
-                        <input type="text" placeholder="Ваше имя" required class="form-input">
-                        <input type="tel" placeholder="Номер телефона" required class="form-input">
-                        <textarea placeholder="Опишите задачу, инженерные сети или требуемые параметры объекта" class="form-input form-textarea"></textarea>
+                    <form class="lead-form" data-form="form-index" action="#" method="post">
+                        <label class="visually-hidden" for="form-index-name">Ваше имя</label>
+                        <input id="form-index-name" name="name" type="text" placeholder="Ваше имя" autocomplete="name" maxlength="100" required class="form-input">
+                        <label class="visually-hidden" for="form-index-phone">Номер телефона</label>
+                        <input id="form-index-phone" name="phone" type="tel" placeholder="Номер телефона" autocomplete="tel" inputmode="tel" maxlength="30" pattern="[0-9+\(\)\-\s]{7,30}" title="Номер телефона, например +375 44 123 45 67" required class="form-input">
+                        <label class="visually-hidden" for="form-index-message">Сообщение</label>
+                        <textarea id="form-index-message" name="message" placeholder="Опишите задачу, инженерные сети или требуемые параметры объекта" maxlength="1500" class="form-input form-textarea"></textarea>
+                        <div class="hp" aria-hidden="true"><label>Не заполняйте это поле<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
                         <button type="submit" class="btn btn-submit">Связаться с инженером</button>
+                        <p class="form-status" role="status" aria-live="polite" hidden></p>
                     </form>
-                    <span class="form-privacy">Продолжая, вы даете согласие на обработку персональных данных и использование cookie-файлов.</span>
+                    <span class="form-privacy">Отправляя форму, вы соглашаетесь на обработку персональных данных в соответствии с <a href="privacy.html">политикой конфиденциальности</a>.</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer" style="padding: 30px 60px;">
-        <div class="footer-bottom" style="border: none; margin: 0; padding: 0; justify-content: center;">
-            <p>© 2026 Альтербелтех · ООО «Альтербелтех» · Все права защищены.</p>
-            <a href="#" class="footer-link" style="margin-left: 20px;">Политика конфиденциальности</a>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-copy">
+                <p><strong>Общество с ограниченной ответственностью «АльтерБелТех»</strong></p>
+                <p><strong>Юридический адрес:</strong> 246007, РБ, г. Гомель, ул. Федюнинского, д. 27, пом. 26</p>
+                <p><strong>Адреса местонахождения:</strong><br>
+                г. Гомель — 246014, ул. Б. Хмельницкого, д. 7<br>
+                г. Минск — 220075, проспект Партизанский, 178, оф. 701</p>
+            </div>
+            <div class="footer-contacts">
+                <p><a href="mailto:alterbeltech@gmail.com">alterbeltech@gmail.com</a></p>
+                <p><a href="tel:+375445288999" class="footer-phone">+375 (44) 528-89-99</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 ООО «АльтерБелТех». Все права защищены.</p>
+            <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
         </div>
     </footer>
 
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            setTimeout(() => {
-                const preloader = document.getElementById('preloader');
-                if (preloader) preloader.classList.add('fade-out');
-            }, 1000);
-
-            const faqItems = document.querySelectorAll('.faq-compact-item');
-            faqItems.forEach(item => {
-                item.addEventListener('click', () => {
-                    item.classList.toggle('active');
-                });
-            });
-        });
-    </script>
+    <script src="config.js"></script>
+    <script src="site.js" defer></script>
 </body>
 </html>
