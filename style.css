@@ -303,3 +303,25 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
 
 .footer-compact { padding-top: 30px; padding-bottom: 30px; }
 .footer-compact .footer-bottom { margin-top: 0; padding-top: 0; border-top: none; justify-content: center; gap: 20px; }
+
+/* Страница «О компании»: направления, отличительные черты, проекты */
+.about-block { margin-bottom: 70px; }
+.about-title { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; border-bottom: 1px solid #332a23; padding-bottom: 14px; margin-bottom: 26px; }
+.about-lead { font-size: 17px; line-height: 1.7; color: #e3dbd0; margin-bottom: 26px; max-width: 900px; }
+.about-closing { margin-top: 30px; margin-bottom: 0; color: #ffffff; font-weight: 600; }
+.about-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.about-grid .service-details-card { padding: 28px; }
+.about-grid .service-details-card h3 { font-size: 16px; }
+.about-grid .service-details-card:hover { transform: none; }
+.about-list { list-style: none; max-width: 900px; }
+.about-list li { position: relative; padding: 16px 0 16px 34px; border-bottom: 1px solid #332a23; font-size: 16px; line-height: 1.6; color: #e3dbd0; }
+.about-list li:first-child { border-top: 1px solid #332a23; }
+.about-list li::before { content: ""; position: absolute; left: 4px; top: 25px; width: 12px; height: 6px; border-left: 2px solid #ffffff; border-bottom: 2px solid #ffffff; transform: rotate(-45deg); }
+.projects-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.projects-year { background: #1c1713; border: 1px solid #332a23; padding: 24px; }
+.projects-year h3 { font-size: 26px; font-weight: 900; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #332a23; }
+.projects-year ul { list-style: none; }
+.projects-year li { font-size: 14.5px; color: #c4baae; padding: 7px 0; line-height: 1.4; }
+@media (max-width: 1200px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 992px) { .about-grid { grid-template-columns: 1fr; } }
+@media (max-width: 576px) { .projects-grid { grid-template-columns: 1fr; } .about-lead { font-size: 16px; } .about-block { margin-bottom: 50px; } }
