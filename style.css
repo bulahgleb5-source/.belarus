@@ -300,3 +300,6 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
     html { scroll-behavior: auto; }
     *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+.footer-compact { padding-top: 30px; padding-bottom: 30px; }
+.footer-compact .footer-bottom { margin-top: 0; padding-top: 0; border-top: none; justify-content: center; gap: 20px; }
