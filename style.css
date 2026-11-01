@@ -257,8 +257,18 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
 .legal-text ul { padding-left: 22px; margin-bottom: 12px; }
 .legal-text a { color: #ffffff; }
 
-/* Меню-«бургер» включается на ширине до 1320px: полная шапка в одну строку занимает ~1300px */
-@media (max-width: 1320px) {
+/* Средние окна: шапка сжимается, чтобы все кнопки помещались в одну строку */
+@media (max-width: 1320px) and (min-width: 1201px) {
+    .header { padding: 16px 30px; }
+    .header-center-nav { gap: 8px; }
+    .btn-nav-item, .btn-services-toggle { padding: 11px 14px; letter-spacing: 0.5px; }
+    .header-right { gap: 14px; }
+    .header-right .btn { padding: 13px 20px; letter-spacing: 1px; }
+    .logo-heavy { font-size: 21px; letter-spacing: 1.5px; }
+}
+
+/* Меню-«бургер» включается на ширине до 1200px */
+@media (max-width: 1200px) {
     .nav-toggle { display: flex; }
     .header-center-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #1c1713; border-bottom: 1px solid #332a23; padding: 16px 60px 24px; flex-direction: column; align-items: stretch; gap: 10px; max-height: calc(100vh - 90px); overflow-y: auto; }
     .header-center-nav.open { display: flex; }

@@ -35,7 +35,7 @@
         if (e.target.closest && e.target.closest('.dropdown-content a, .btn-nav-item')) setNav(false);
       });
       window.addEventListener('resize', function () {
-        if (window.innerWidth > 1320) setNav(false);
+        if (window.innerWidth > 1200) setNav(false);
       });
     }
 
