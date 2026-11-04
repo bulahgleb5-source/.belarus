@@ -335,3 +335,19 @@ body { font-family: 'Segoe UI', Arial, sans-serif; color: #ffffff; background-co
     .stats-section .stats-grid-main { gap: 30px; }
     .stats-section .stat-title-top { font-size: 16px; }
 }
+
+/* О компании: проекты списком (по образцу страницы объектов) */
+.projects-intro { margin-bottom: 28px; }
+.projects-list { display: flex; flex-direction: column; border-top: 1px solid #332a23; }
+.project-row { display: flex; align-items: center; gap: 28px; padding: 22px 8px; border-bottom: 1px solid #332a23; transition: background .2s; }
+.project-row:hover { background: #1c1713; }
+.project-num { flex: 0 0 44px; font-size: 14px; font-weight: 800; color: #9a9083; letter-spacing: 1px; }
+.project-name { flex: 1 1 auto; font-size: 20px; font-weight: 700; color: #ffffff; line-height: 1.3; overflow-wrap: anywhere; }
+.project-years { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.project-year { font-size: 13px; font-weight: 700; color: #e3dbd0; border: 1px solid #4a3e34; padding: 5px 12px; letter-spacing: .5px; }
+@media (max-width: 576px) {
+    .project-row { flex-wrap: wrap; gap: 8px 14px; padding: 18px 0; }
+    .project-num { flex-basis: 30px; }
+    .project-name { flex: 1 1 calc(100% - 50px); font-size: 18px; }
+    .project-years { flex-basis: 100%; justify-content: flex-start; padding-left: 44px; }
+}
